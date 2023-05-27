@@ -1,0 +1,33 @@
+﻿<Window x:Class="lab11.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab11"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Margin="10,18,83,367">N</Label>
+        <TextBox Name="N" Margin="32,26,601,367" RenderTransformOrigin="0.5,0.5" Text="6"/>
+        <Label Margin="10,72,726,302">K</Label>
+        <TextBox Name="K" Margin="32,72,601,322" Grid.ColumnSpan="2">3</TextBox>
+
+        <Button Name="TasksButton" Margin="199,17,485,376" Click="Tasks">Tasks</Button>
+        <TextBox Name="TasksOtp" Margin="320,21,313,367">0</TextBox>
+        <Button Name="DelegatesButton" Margin="204,79,485,309" Click="Delegates">Delegates</Button>
+        <TextBox Name="DelegatesOtp" Margin="320,79,313,295">0</TextBox>
+        <Button Name="AsyncButton" Margin="204,147,485,238" Click="Async">Async</Button>
+        <TextBox Name="AsyncOtp" Margin="320,152,313,217">0</TextBox>
+
+        <Label Margin="32,149,684,250">Fibonnaci</Label>
+        <Label Margin="10,172,746,217">i</Label>
+        <TextBox Name="FibonacciInput" Margin="32,176,609,217">3</TextBox>
+        <Button Name="FibonacciButton" Margin="5,217,676,176" Click="Fibbonacci">Fibonacci</Button>
+        <TextBox Name="FibonacciOtp" Margin="127,222,424,173">0</TextBox>
+        <ProgressBar Name="FibonacciProgress" Margin="10,266,443,139" Minimum="0" Maximum="100"/>
+
+        <Button  Margin="480,260,201,133" Click="Compress">Compress</Button>
+        <Button  Margin="623,260,58,133" Click="Decompress">Decompress</Button>
+
+    </Grid>
+</Window>
